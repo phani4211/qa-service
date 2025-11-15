@@ -9,6 +9,9 @@ Run locally:
    npm start
 3. Query:
    GET http://localhost:3000/ask?q=When+is+Layla+planning+her+trip+to+London?
+   GET http://localhost:3000/ask?q=How%20many%20cars%20does%20Vikram%20Desai%20have
+   GET http://localhost:3000/ask?q=What%20are%20Amira%E2%80%99s%20favorite%20restaurants
+
 
 Output:
 { "answer": "..." }
@@ -24,4 +27,5 @@ Data insights:
 - Dates in free text vary in format; extracting exact dates reliably requires a date parser / normalized timeline.
 
 Deployment:
+
 - This app can be deployed to Cloud Run, Heroku, or Vercel. Ensure PORT is honored and Node >=18 available.
